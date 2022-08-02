@@ -1,0 +1,54 @@
+.search1 {
+  background: #f7f7f8;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 16px;
+
+  width: 437px;
+  height: 48px;
+  left: 24px;
+  top: 120px;
+}
+.searchimg1 {
+  top: 95px;
+  left: 427px;
+  position: absolute;
+}
+.ticketbox1 {
+  display: flex;
+  justify-content: space-between;
+}
+.FillterBox {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+.FillterBox1,
+.FillterBox2 {
+    box-sizing: border-box;
+  display: flex;
+  border: 1px solid #ff993c;
+  border-radius: 6px;
+  flex-direction: row;
+justify-content: center;
+
+padding: 11px 16px;
+gap: 10px;
+width: 127px;
+height: 48px;
+left: 1225px;
+top: 120px;
+}
+.FillterBox1>p,
+.FillterBox2>p {
+   font-weight: 700;
+   font-size: 18px;
+   color: #FF993C;
+   line-height: 1.4;
+}
+.FillterBox2{
+    width: 181px;
+}
