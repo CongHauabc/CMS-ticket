@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:ital,wght@0,100;0,700;1,100;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:ital,wght@0,100;0,500;0,700;1,100;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:ital,wght@0,100;0,500;0,600;0,700;1,100;1,700&display=swap');
+.content2,.conten1{
+    background: #FFFFFF;
+border-radius: 24px;
+height: 963px;
+padding: 24px;
+}
+.conten1{
+    margin-right: 24px;
+}
+.content2{
+    margin-right: 32px;
+}
+.FillterBox2{
+    background: #FF993C;
+    border-radius: 8px;
+}
+.FillterBox2>p{
+    color: #FFFFFF;
+    font-family: 'Montserrat';
+font-style: normal;
+}
+.statusticket{
+    display: flex;
+    padding-bottom: 16px;
+    
+}
+.statusticket>.title{
+    width: 50%;
+}
+.statusticket>.title>p{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 26px;
+}
+.status>label{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+/* Text */
+
+color: #1E0D03;
+
+opacity: 0.7;
+}
+.status>label>input[type='radio']{
+    margin-right: 8px;
+}
+.time>p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    
+    display: flex;
+    align-items: center;
+    
+    /* Text */
+    
+    color: #1E0D03;
+    
+    opacity: 0.7;
+    
+}
+.title1{
+    width: 90%;
+}
+.statusticket>.title1>p{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 26px;
+}
+.filter{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: #FF993C;
+    border: 1px solid #FF993C;
+    border-radius: 8px;
+    padding: 11px 63px;
+}

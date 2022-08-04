@@ -8,8 +8,9 @@ import img5 from "~/asset/img/setting.png";
 import { NavLink, Link, useRoutes } from "react-router-dom";
 
 import home from "~/asset/img/home.png";
-import "./Menu.css";
+
 import "antd/dist/antd.css";
+import "./Menu.css";
 import { Col, Row } from "antd";
 
 <link
@@ -25,11 +26,10 @@ function Menu() {
         <div className="home">
           <ul>
             <li className="limenu" id="limenu">
-              <NavLink to="/">
-                <span>
-                  {" "}
+              <NavLink to="/" className="navmenu">
+                
                   <img src={home} className="" />
-                </span>
+                
                 Trang Chủ
               </NavLink>
             </li>
@@ -44,7 +44,7 @@ function Menu() {
             </li>
             <li className="limenu">
               
-              <NavLink to="/Ticket1">
+              <NavLink to="/Ticketcontrol">
               <span>
                 {" "}
                 <img src={img2} className="" />
@@ -81,7 +81,7 @@ function Menu() {
             </li>
             <ul>
               <li className="limenu">
-                <NavLink to="/Ticket1">Gói dịch vụ</NavLink>
+                <NavLink to="/Service">Gói dịch vụ</NavLink>
               </li>
             </ul>
           </ul>
