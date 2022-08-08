@@ -4,7 +4,7 @@ import img6 from "~/asset/img/search.png";
 import "./Service.css";
 import fillterimg from "~/asset/img/fi_filter.png";
 
-import Table from '~/component/Ticketmanagement/table/Table'
+import Table from '~/component/Service/table/Table'
 function Service(props) {
   return (
     <div className="Conten">

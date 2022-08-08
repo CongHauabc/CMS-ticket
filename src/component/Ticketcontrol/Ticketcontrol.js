@@ -2,7 +2,7 @@ import React from "react";
 import { Row, Col } from "antd";
 import "./Ticketcontrol.css";
 import { DatePicker, Space } from "antd";
-import Table from '~/component/Ticketmanagement/table/Table'
+import Table from '~/component/Ticketcontrol/table/Table'
 
 function Ticketcontrol(props) {
   return (

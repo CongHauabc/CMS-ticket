@@ -1,7 +1,65 @@
-.Conten{
-    
-    border-radius: 24px;
-    background: #FFFFFF;
-    width: 99%;
-    padding: 24px;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:ital,wght@0,100;0,500;0,600;0,700;1,100;1,700&display=swap');
+.Conten {
+  border-radius: 24px;
+  background: #ffffff;
+  width: 99%;
+  padding: 24px;
+}
+.contents {
+  display: flex;
+  justify-content: space-between;
+}
+.totalsales {
+  margin-top: 40px;
+}
+.totalsales-title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  /* identical to box height, or 157% */
+
+  /* Text */
+
+  color: #1e0d03;
+
+  opacity: 0.5;
+}
+.totalsales p{
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  /* identical to box height, or 125% */
+
+  /* Text */
+
+  color: #1e0d03;
+}
+.doughnutChar{
+  display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+
+}
+.doughnutChar>div>h3{
+  text-align: center;
+}
+.usedTickets{
+  
+
+background: #4F75FF;
+border-radius: 4px;
+padding: 0px 22px;
+margin-right: 8px;
+
+}
+.unusedTickets{
+
+  background: #FF8A48;
+  border-radius: 4px;
+  padding: 0px 22px;
+  margin-right: 8px;
 }

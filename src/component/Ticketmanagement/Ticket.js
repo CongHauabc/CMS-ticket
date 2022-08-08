@@ -6,6 +6,13 @@ import fillterimg from "~/asset/img/fi_filter.png";
 
 import Table from '~/component/Ticketmanagement/table/Table'
 function Ticket(props) {
+  const handleFillte = ()=>{
+    const btnfil = document.querySelector('.FillterBox1')
+    const fill = document.querySelector('.filler')
+    btnfil.addEventListener('click',()=>{
+      fill.classList.add('open')
+    })
+  }
   return (
     <div className="Conten">
       <div>
@@ -19,19 +26,21 @@ function Ticket(props) {
           <img src={img6} className="searchimg1" />
         </div>
         <div className="FillterBox">
-          <div className="FillterBox1">
-            <img src={fillterimg}/>
-            <p>Lọc vé</p>
-          </div>
-          <div className="FillterBox2">
+         
             
-            <p>Xuất file (.csv)</p>
-          </div>
+            <button onClick={handleFillte} className="FillterBox1"><span><img src={fillterimg}/></span>Lọc vé</button>
+           
+          
+          <button className="FillterBox2" style={{background:'white'}}>
+            
+            Xuất file (.csv)
+          </button>
         </div>
       </div>
       <div>
         <Table/>
       </div>
+      
     </div>
   );
 }

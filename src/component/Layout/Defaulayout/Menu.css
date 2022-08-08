@@ -3,3 +3,51 @@
 .contenchil{
     top: 36px;
 }
+.filler{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: radial-gradient(black, transparent);
+    
+    align-items: center;
+    display: none;
+    justify-content: center;
+  }
+  .filler.open{
+    display: flex;
+  }
+  .fillter-content{
+    width: 634px;
+height: 454px;
+
+background: #FFFFFF;
+border-radius: 16px;
+padding: 24px 32px;
+  }
+  .timeFillter{
+    display: flex;
+    gap: 134px;
+  }
+  .status{
+    display: flex;
+    justify-content: space-between;
+  }
+  .btnfill{
+    border: 1px solid #FF993C;
+    border-radius: 8px;
+    width: 160px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 24px;
+    gap: 10px;
+  }
+  .btnfi{
+    margin-left: 50%;
+    transform: translateX(-25%);
+    margin-top: 42px;
+  }
