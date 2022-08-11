@@ -13,6 +13,8 @@ function Ticket(props) {
       fill.classList.add('open')
     })
   }
+  
+
   return (
     <div className="Conten">
       <div>

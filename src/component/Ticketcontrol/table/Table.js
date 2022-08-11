@@ -1,28 +1,155 @@
 import { Button, Table } from "antd";
 import React, { useState } from "react";
 const columns = [
+  
   {
-    title: "Name",
-    dataIndex: "name",
+    title: "STT",
+    dataIndex: "key",
   },
   {
-    title: "Age",
-    dataIndex: "age",
+    title: "Số vé",
+    dataIndex: "numberTicket",
   },
   {
-    title: "Address",
-    dataIndex: "address",
+    title: "Ngày sử dụng",
+    dataIndex: "date",
+  },
+  {
+    title: "Tên loại vé",
+    dataIndex: "nameTicket",
+  },
+  {
+    title: "Cổng check - in",
+    dataIndex: "checkin",
+  },
+  {
+    title: "",
+    dataIndex: "status",
   },
 ];
-const data = [];
+const data = [{
+  key: 1,
+  numberTicket: 205314876321,
+  date: '14/04/2021',
+  nameTicket: `Vé cổng`,
+  checkin:'Cổng 1',
+  status:'Chưa đối soát'
+},
+{
+  key: 1,
+  numberTicket: 205314876321,
+  date: '14/04/2021',
+  nameTicket: `Vé cổng`,
+  checkin:'Cổng 1',
+  status:'Chưa đối soát'
+},
+{
+  key: 1,
+  numberTicket: 205314876321,
+  date: '14/04/2021',
+  nameTicket: `Vé cổng`,
+  checkin:'Cổng 1',
+  status:'Chưa đối soát'
+},
+{
+  key: 1,
+  numberTicket: 205314876321,
+  date: '14/04/2021',
+  nameTicket: `Vé cổng`,
+  checkin:'Cổng 1',
+  status:'Chưa đối soát'
+},
+{
+  key: 1,
+  numberTicket: 205314876321,
+  date: '14/04/2021',
+  nameTicket: `Vé cổng`,
+  checkin:'Cổng 1',
+  status:'Chưa đối soát'
+},
+{
+  key: 1,
+  numberTicket: 205314876321,
+  date: '14/04/2021',
+  nameTicket: `Vé cổng`,
+  checkin:'Cổng 1',
+  status:'Chưa đối soát'
+},
+{
+  key: 1,
+  numberTicket: 205314876321,
+  date: '14/04/2021',
+  nameTicket: `Vé cổng`,
+  checkin:'Cổng 1',
+  status:'Chưa đối soát'
+},
+{
+  key: 1,
+  numberTicket: 205314876321,
+  date: '14/04/2021',
+  nameTicket: `Vé cổng`,
+  checkin:'Cổng 1',
+  status:'Chưa đối soát'
+},
+{
+  key: 1,
+  numberTicket: 205314876321,
+  date: '14/04/2021',
+  nameTicket: `Vé cổng`,
+  checkin:'Cổng 1',
+  status:'Chưa đối soát'
+},
+{
+  key: 1,
+  numberTicket: 205314876321,
+  date: '14/04/2021',
+  nameTicket: `Vé cổng`,
+  checkin:'Cổng 1',
+  status:'Chưa đối soát'
+},
+{
+  key: 1,
+  numberTicket: 205314876321,
+  date: '14/04/2021',
+  nameTicket: `Vé cổng`,
+  checkin:'Cổng 1',
+  status:'Chưa đối soát'
+},
+{
+  key: 1,
+  numberTicket: 205314876321,
+  date: '14/04/2021',
+  nameTicket: `Vé cổng`,
+  checkin:'Cổng 1',
+  status:'Chưa đối soát'
+},
+{
+  key: 1,
+  numberTicket: 205314876321,
+  date: '14/04/2021',
+  nameTicket: `Vé cổng`,
+  checkin:'Cổng 1',
+  status:'Chưa đối soát'
+},
+{
+  key: 1,
+  numberTicket: 205314876321,
+  date: '14/04/2021',
+  nameTicket: `Vé cổng`,
+  checkin:'Cổng 1',
+  status:'Chưa đối soát'
+},
+{
+  key: 1,
+  numberTicket: 205314876321,
+  date: '14/04/2021',
+  nameTicket: `Vé cổng`,
+  checkin:'Cổng 1',
+  status:'Chưa đối soát'
+},];
 
-for (let i = 0; i < 46; i++) {
-  data.push({
-    key: i,
-    name: `Edward King ${i}`,
-    age: 32,
-    address: `London, Park Lane no. ${i}`,
-  });
+for (let i = 0; i < data.length; i++) {
+  data.push();
 }
 
 const App = () => {

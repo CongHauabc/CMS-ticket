@@ -37,7 +37,7 @@ font-weight: 600;
 font-size: 16px;
 line-height: 26px;
 }
-.status>label{
+.status1>label{
     font-family: 'Montserrat';
 font-style: normal;
 font-weight: 500;
@@ -54,7 +54,7 @@ color: #1E0D03;
 
 opacity: 0.7;
 }
-.status>label>input[type='radio']{
+.status1>label>input[type='radio']{
     margin-right: 8px;
 }
 .time>p{
@@ -97,4 +97,7 @@ line-height: 26px;
     border: 1px solid #FF993C;
     border-radius: 8px;
     padding: 11px 63px;
+}
+.tableticket{
+    margin-top: 24px;
 }

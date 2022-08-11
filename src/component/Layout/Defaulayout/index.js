@@ -5,6 +5,13 @@ import { Col, Row } from "antd";
 import "./Menu.css";
 import { DatePicker, Space } from "antd";
 function Defaulayout({ children }) {
+  const clickFillte = ()=>{
+    const btns = document.querySelector('.btnfill')
+    const fill = document.querySelector('.filler')
+    btns.addEventListener('click',()=>{
+      fill.classList.remove('open')
+    })
+  }
   return (
     <div>
     <Row>
@@ -121,7 +128,7 @@ function Defaulayout({ children }) {
                   </div>
               </div>
               <div className="btnfi">
-                <button className="btnfill">Lọc</button>
+                <button onClick={clickFillte} className="btnfill">Lọc</button>
               </div>
           </div>
         </div>

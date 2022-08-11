@@ -33,7 +33,7 @@ function Ticketcontrol(props) {
                   </div>
                 </div>
                 </div>
-                <div>
+                <div className="tableticket">
                   <Table/>
                 </div>
               </div>
@@ -49,7 +49,7 @@ function Ticketcontrol(props) {
                   <div className="title">
                     <p>Tình trạng đổi soát</p>
                   </div>
-                  <div className="status">
+                  <div className="status1">
                     <label>
                       <input type={"radio"} /> Tất cả
                     </label>

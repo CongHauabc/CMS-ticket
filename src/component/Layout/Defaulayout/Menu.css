@@ -9,7 +9,7 @@
     right: 0;
     left: 0;
     bottom: 0;
-    background: radial-gradient(black, transparent);
+    background: rgba(0,0,0,0.2);
     
     align-items: center;
     display: none;
