@@ -6,10 +6,11 @@ function Doughnutchar(props) {
         
         datasets: [{
           label: 'My First Dataset',
-          data: [ 50,150],
+          data: [ 13568,56024 ],
           backgroundColor: [
-            '#4F75FF',
+            
             '#FF8A48',
+            '#4F75FF',
           
           ],
           hoverOffset: 4

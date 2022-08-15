@@ -11,19 +11,35 @@ const columns = [
     dataIndex: "Bookingcode",
   },
   {
-    title: "Số vé",
-    dataIndex: "numberSticket",
+    title: "Tên gói vé",
+    dataIndex: "nameSticket",
   },
   {
-    title: 'Tình trạng sử dụng',
+    title: "Ngày áp dụng",
+    dataIndex: "date",
+  },
+  {
+    title: "Ngày hết hạn",
+    dataIndex: "dateout",
+  },
+  {
+    title: "Giá vé (VNĐ/Vé)",
+    dataIndex: "prime",
+  },
+  {
+    title: "Giá combo (VNĐ/Vé)",
+    dataIndex: "primeCombo",
+  },
+  {
+    title: 'Tình trạng',
     dataIndex: 'tags',
     key: 'tags',
     render: (_, { tags }) => (
         <>
           {tags.map((tag) => {
-            let color = tag.length > 8 && tag.length < 12 ? 'geekblue' : 'green';
+            let color = tag.length > 8 && tag.length < 12 ? 'green' : 'green';
   
-            if (tag === 'Hết hạn') {
+            if (tag === 'Tắt') {
               color = 'volcano';
             }
   
@@ -36,18 +52,9 @@ const columns = [
         </>
       ),
   },  
-  {
-    title: "Ngày sử dụng",
-    dataIndex: "date",
-  },
-  {
-    title: "Ngày xuất vé",
-    dataIndex: "dateout",
-  },
-  {
-    title: "Cổng check - in",
-    dataIndex: "checkin",
-  },
+  
+ 
+  
   {
     title: "",
     dataIndex: "status",
@@ -55,16 +62,23 @@ const columns = [
 ];
 const data = [{
   key: 1,
-  Bookingcode:'ALTFGHJU',
-  numberSticket: 123456789034,
-  tags:['Hết hạn'],
+  Bookingcode:'ALT20210501',
+  nameSticket: 'Gói gia đình',
   date: '14/04/2021',
   dateout: '14/04/2021',
-
-  
-  
-  checkin:'Cổng 1',
-  
+  prime:'90.000 VNĐ',
+  primeCombo:'360.000 VNĐ/4 Vé',
+  tags:['Đang áp dụng'],  
+},
+{
+  key: 2,
+  Bookingcode:'ALT20210501',
+  nameSticket: 'Gói sự kiện',
+  date: '14/04/2021',
+  dateout: '14/04/2021',
+  prime:'20.000 VNĐ',
+  primeCombo:'',
+  tags:['Tắt'],  
 },
 
 ];

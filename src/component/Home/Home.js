@@ -101,8 +101,8 @@ function Home() {
             <b>525.145.000</b> đồng
           </p>
         </div>
-        <div>
-          <div>
+        <div className="dongchart">
+          <div style={{marginRight:'150px'}}>
             <Space direction="vertical" size={12}>
               <DatePicker
                 dateRender={(current) => {

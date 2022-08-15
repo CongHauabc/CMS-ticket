@@ -20,6 +20,7 @@
 .ticketbox1 {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 31px;
 }
 .FillterBox {
   display: flex;
@@ -46,9 +47,10 @@ top: 120px;
 .FillterBox2>p {
    font-weight: 700;
    font-size: 18px;
-   
+   color: #ff993c;
    line-height: 1.4;
 }
 .FillterBox2{
     width: 181px;
+    background-color: #ffff;
 }

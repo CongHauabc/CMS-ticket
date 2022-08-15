@@ -19,13 +19,14 @@ function Service(props) {
           <img src={img6} className="searchimg1" />
         </div>
         <div className="FillterBox">
-          <div className="FillterBox1">
-            <img src={fillterimg}/>
-            <p>Lọc vé</p>
-          </div>
+          
           <div className="FillterBox2">
             
             <p>Xuất file (.csv)</p>
+          </div>
+          <div className="FillterBox1">
+            <img src={fillterimg}/>
+            <p>Lọc vé</p>
           </div>
         </div>
       </div>

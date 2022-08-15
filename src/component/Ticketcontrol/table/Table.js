@@ -36,7 +36,7 @@ const data = [{
   status:'Chưa đối soát'
 },
 {
-  key: 1,
+  key: 2,
   numberTicket: 205314876321,
   date: '14/04/2021',
   nameTicket: `Vé cổng`,
@@ -44,7 +44,7 @@ const data = [{
   status:'Chưa đối soát'
 },
 {
-  key: 1,
+  key: 3,
   numberTicket: 205314876321,
   date: '14/04/2021',
   nameTicket: `Vé cổng`,
@@ -52,7 +52,7 @@ const data = [{
   status:'Chưa đối soát'
 },
 {
-  key: 1,
+  key: 4,
   numberTicket: 205314876321,
   date: '14/04/2021',
   nameTicket: `Vé cổng`,
@@ -60,7 +60,7 @@ const data = [{
   status:'Chưa đối soát'
 },
 {
-  key: 1,
+  key: 5,
   numberTicket: 205314876321,
   date: '14/04/2021',
   nameTicket: `Vé cổng`,
@@ -68,7 +68,7 @@ const data = [{
   status:'Chưa đối soát'
 },
 {
-  key: 1,
+  key: 6,
   numberTicket: 205314876321,
   date: '14/04/2021',
   nameTicket: `Vé cổng`,
@@ -76,7 +76,7 @@ const data = [{
   status:'Chưa đối soát'
 },
 {
-  key: 1,
+  key: 7,
   numberTicket: 205314876321,
   date: '14/04/2021',
   nameTicket: `Vé cổng`,
@@ -84,7 +84,7 @@ const data = [{
   status:'Chưa đối soát'
 },
 {
-  key: 1,
+  key: 8,
   numberTicket: 205314876321,
   date: '14/04/2021',
   nameTicket: `Vé cổng`,
@@ -92,7 +92,7 @@ const data = [{
   status:'Chưa đối soát'
 },
 {
-  key: 1,
+  key: 9,
   numberTicket: 205314876321,
   date: '14/04/2021',
   nameTicket: `Vé cổng`,
@@ -100,7 +100,7 @@ const data = [{
   status:'Chưa đối soát'
 },
 {
-  key: 1,
+  key: 10,
   numberTicket: 205314876321,
   date: '14/04/2021',
   nameTicket: `Vé cổng`,
@@ -108,7 +108,7 @@ const data = [{
   status:'Chưa đối soát'
 },
 {
-  key: 1,
+  key: 11,
   numberTicket: 205314876321,
   date: '14/04/2021',
   nameTicket: `Vé cổng`,
@@ -116,7 +116,7 @@ const data = [{
   status:'Chưa đối soát'
 },
 {
-  key: 1,
+  key: 12,
   numberTicket: 205314876321,
   date: '14/04/2021',
   nameTicket: `Vé cổng`,
@@ -124,7 +124,7 @@ const data = [{
   status:'Chưa đối soát'
 },
 {
-  key: 1,
+  key: 13,
   numberTicket: 205314876321,
   date: '14/04/2021',
   nameTicket: `Vé cổng`,
@@ -132,7 +132,7 @@ const data = [{
   status:'Chưa đối soát'
 },
 {
-  key: 1,
+  key: 14,
   numberTicket: 205314876321,
   date: '14/04/2021',
   nameTicket: `Vé cổng`,
@@ -140,7 +140,7 @@ const data = [{
   status:'Chưa đối soát'
 },
 {
-  key: 1,
+  key: 15,
   numberTicket: 205314876321,
   date: '14/04/2021',
   nameTicket: `Vé cổng`,

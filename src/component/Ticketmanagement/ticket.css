@@ -12,8 +12,8 @@
   left: 24px;
   top: 120px;
 }
-.searchimg1 {
-  top: 95px;
+.searchimg11 {
+  top: 160px;
   left: 427px;
   position: absolute;
 }
@@ -52,4 +52,26 @@ background-color: white;
 }
 .FillterBox2{
     width: 181px;
+}
+.tab-menu{
+  display: flex;
+  margin-bottom: 31px;
+  cursor: pointer;
+}
+.tab-menu-content{
+  display: block;
+  padding: 0 12px;
+  font-size: 19px;
+  font-weight: 700;
+  margin-right: 55px;
+}
+.tab-menu-content.actiive{
+    border-bottom: 3px solid;
+    color: #FF993C;
+}
+.contents{
+  display: none;
+}
+.content-active{
+  display: block;
 }

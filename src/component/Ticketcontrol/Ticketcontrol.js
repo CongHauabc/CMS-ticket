@@ -1,8 +1,8 @@
 import React from "react";
 import { Row, Col } from "antd";
 import "./Ticketcontrol.css";
-import { DatePicker, Space } from "antd";
-import Table from '~/component/Ticketcontrol/table/Table'
+import { DatePicker, Space,Radio } from "antd";
+import Table from "~/component/Ticketcontrol/table/Table";
 
 function Ticketcontrol(props) {
   return (
@@ -10,35 +10,35 @@ function Ticketcontrol(props) {
       <Row>
         <Col span={24}>
           <Row>
-            <Col span={16}>
+            <Col span={15}>
               <div className="conten1">
                 <div>
-                <div>
-                  <h1>
-                    <b>Đối soát vé</b>
-                  </h1>
-                </div>
-                <div className="ticketbox1">
-                  <div className="searchbox">
-                    <input
-                      type="search"
-                      placeholder="Search"
-                      className="search1"
-                    />
+                  <div>
+                    <h1>
+                      <b>Đối soát vé</b>
+                    </h1>
                   </div>
-                  <div className="FillterBox">
-                    <div className="FillterBox2">
-                      <p>Chốt đối soát</p>
+                  <div className="ticketbox1">
+                    <div className="searchbox">
+                      <input
+                        type="search"
+                        placeholder="Search"
+                        className="search1"
+                      />
+                    </div>
+                    <div className="FillterBox">
+                      <div className="FillterBox2">
+                        <p>Chốt đối soát</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-                </div>
                 <div className="tableticket">
-                  <Table/>
+                  <Table />
                 </div>
               </div>
             </Col>
-            <Col span={8}>
+            <Col span={9}>
               <div className="content2">
                 <div>
                   <h1>
@@ -50,28 +50,29 @@ function Ticketcontrol(props) {
                     <p>Tình trạng đổi soát</p>
                   </div>
                   <div className="status1">
-                    <label>
-                      <input type={"radio"} /> Tất cả
-                    </label>
-                    <br />
-                    <label>
-                      <input type={"radio"} /> Đã đối soát
-                    </label>
-                    <br />
-                    <label>
-                      <input type={"radio"} /> Chưa đối soát
-                    </label>
+                    <Radio.Group>
+                      <Space direction="vertical">
+                        <Radio value={1}>Tất cả</Radio>
+                        <Radio value={2}>Đã đối soát</Radio>
+                        <Radio value={3}>Chưa đối soát</Radio>
+                        
+                      </Space>
+                    </Radio.Group>
                   </div>
                 </div>
                 <div className="statusticket">
                   <div className="title1">
                     <p>Loại vé</p>
-                    <p>Từ ngày</p>
+                    <p style={{marginBottom:'40px'}}>Từ ngày</p>
                     <p>Đến ngày</p>
                   </div>
                   <div className="time">
                     <p>Vé cổng</p>
-                    <Space direction="vertical" size={12} style={{marginBottom:'9px'}}>
+                    <Space
+                      direction="vertical"
+                      size={12}
+                      style={{ marginBottom: "9px" }}
+                    >
                       <DatePicker
                         dateRender={(current) => {
                           const style = {};
@@ -116,8 +117,7 @@ function Ticketcontrol(props) {
                   </div>
                 </div>
                 <div>
-                <button className="filter">Lọc</button>
-
+                  <button className="filter">Lọc</button>
                 </div>
               </div>
             </Col>

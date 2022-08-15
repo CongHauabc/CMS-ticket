@@ -63,3 +63,7 @@ margin-right: 8px;
   padding: 0px 22px;
   margin-right: 8px;
 }
+.dongchart{
+  display: flex;
+  justify-content: space-between;
+}
