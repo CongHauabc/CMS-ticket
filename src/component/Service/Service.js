@@ -3,9 +3,16 @@ import "~/component/cp.css";
 import img6 from "~/asset/img/search.png";
 import "./Service.css";
 import fillterimg from "~/asset/img/fi_filter.png";
-
-import Table from '~/component/Service/table/Table'
+import { useState } from "react";
+import Table from "~/component/Service/table/Table";
 function Service(props) {
+  const clickbtn = ()=>{
+    const btnfil = document.querySelector(".FillterBox11");
+    const fill = document.querySelector(".addTicket");
+    btnfil.addEventListener("click", () => {
+      fill.classList.add("open");
+    });
+  }
   return (
     <div className="Conten">
       <div>
@@ -19,20 +26,20 @@ function Service(props) {
           <img src={img6} className="searchimg1" />
         </div>
         <div className="FillterBox">
-          
           <div className="FillterBox2">
-            
             <p>Xuất file (.csv)</p>
           </div>
-          <div className="FillterBox1">
-            <img src={fillterimg}/>
-            <p>Lọc vé</p>
-          </div>
+          <button onClick={clickbtn} className="FillterBox11">
+            Thêm gói mới
+          </button>
         </div>
       </div>
       <div>
-        <Table/>
+        <Table />
       </div>
+
+      
+        
     </div>
   );
 }

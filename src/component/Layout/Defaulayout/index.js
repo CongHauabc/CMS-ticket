@@ -4,7 +4,10 @@ import Header from "./Header/Header";
 import { Col, Row, Radio } from "antd";
 import { useState } from "react";
 import "./Menu.css";
-import { DatePicker, Space } from "antd";
+
+import moment from "moment";
+import { DatePicker, Space, TimePicker, Select } from "antd";
+const { Option } = Select;
 function Defaulayout({ children }) {
   const clickFillte = () => {
     const btns = document.querySelector(".btnfill");
@@ -12,6 +15,9 @@ function Defaulayout({ children }) {
     btns.addEventListener("click", () => {
       fill.classList.remove("open");
     });
+  };
+  const handleChange = (value) => {
+    console.log(`selected ${value}`);
   };
   const door = [
     { id: 1, door: "Tất cả" },
@@ -23,26 +29,21 @@ function Defaulayout({ children }) {
   ];
   const [checked, setChecked] = useState([]);
   console.log(checked);
-  
+
   const handleCheck = (id) => {
     setChecked((pre) => {
       const isChecked = checked.includes(id);
       if (id === 1) {
-         setChecked([1])
+        setChecked([1]);
       }
       if (isChecked) {
-        
-        return checked.filter((item) => item !== id );
-        
-      } 
-      else {
-        
+        return checked.filter((item) => item !== id);
+      } else {
         return [...pre, id];
       }
-      
     });
   };
-  
+
   return (
     <div>
       <Row>
@@ -147,6 +148,118 @@ function Defaulayout({ children }) {
             <button onClick={clickFillte} className="btnfill">
               Lọc
             </button>
+          </div>
+        </div>
+      </div>
+      <div className="addTicket">
+        <div className="addTicketContent">
+          <h1>Thêm gói vé</h1>
+          <label className="hcontent">
+            Tên gói vé<span>*</span>
+          </label>
+          <br />
+          <input className="addnameTicket" />
+          <div className="addTime">
+            <div className="addtime-content">
+              <label className="hcontent">Ngày áp dụng</label>
+              <br />
+              <div className="addtime-contents">
+                <Space direction="vertical" size={12}>
+                  <DatePicker
+                    dateRender={(current) => {
+                      const style = {};
+
+                      if (current.date() === 1) {
+                        style.border = "1px solid #1890ff";
+                        style.borderRadius = "50%";
+                      }
+
+                      return (
+                        <div className="ant-picker-cell-inner" style={style}>
+                          {current.date()}
+                        </div>
+                      );
+                    }}
+                  />
+                </Space>
+                <TimePicker
+                  placeholder="HH:mm:ss"
+                  size="large"
+                  style={{ width: "137px", height: "40px" }}
+                />
+              </div>
+            </div>
+            <div className="addtime-content">
+              <label className="hcontent">Ngày hết hạn</label>
+              <br />
+              <div className="addtime-contents">
+                <Space direction="vertical" size={12}>
+                  <DatePicker
+                    dateRender={(current) => {
+                      const style = {};
+
+                      if (current.date() === 1) {
+                        style.border = "1px solid #1890ff";
+                        style.borderRadius = "50%";
+                      }
+
+                      return (
+                        <div className="ant-picker-cell-inner" style={style}>
+                          {current.date()}
+                        </div>
+                      );
+                    }}
+                  />
+                </Space>
+                <TimePicker
+                  placeholder="HH:mm:ss"
+                  size="large"
+                  style={{ width: "137px", height: "40px" }}
+                />
+              </div>
+            </div>
+          </div>
+          <div>
+            <label className="hcontent">
+              Giá vé áp dụng<span>*</span>
+            </label>
+            <label className="primeticket" style={{marginBottom:'28px',marginTop:'22px'}}>
+              <input type={"checkbox"} /> <span>Vé lẻ (vnđ/vé) với giá</span>
+              <input className="primetickets" placeholder="Giá vé" />
+              <span>/ vé</span>
+            </label>
+            <label className="primeticket">
+              <input type={"checkbox"} /> <span>Vé lẻ (vnđ/vé) với giá</span>
+              <input className="primetickets" placeholder="Giá vé" />
+              <span>/</span>
+              <input className="primetickets" placeholder="Giá vé" />
+              <span>vé</span>
+            </label>
+          </div>
+          <div>
+            <label className="hcontent">Tình trạng</label>
+            <br />
+
+            <Select
+              className="selecto"
+              defaultValue="Đang áp dụng"
+              style={{
+                width: 176,
+                height: 40,
+                borderRadius:8,
+              }
+              }
+              onChange={handleChange}
+            >
+              <Option value="lucy">Đang áp dụng</Option>
+            </Select>
+          </div>
+          <p>
+            <span>*</span> là thông tin bắt buộc
+          </p>
+          <div className="btnclick">
+            <button className="cancel">Hủy</button>
+            <button className="save">Lưu</button>
           </div>
         </div>
       </div>
