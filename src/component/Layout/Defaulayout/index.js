@@ -16,6 +16,13 @@ function Defaulayout({ children }) {
       fill.classList.remove("open");
     });
   };
+  const savebtn = () => {
+    const update = document.querySelector(".addTicket");
+    const save = document.querySelector(".save");
+    save.addEventListener("click", () => {
+      update.classList.remove("open");
+    });
+  };
   const handleChange = (value) => {
     console.log(`selected ${value}`);
   };
@@ -223,7 +230,10 @@ function Defaulayout({ children }) {
             <label className="hcontent">
               Giá vé áp dụng<span>*</span>
             </label>
-            <label className="primeticket" style={{marginBottom:'28px',marginTop:'22px'}}>
+            <label
+              className="primeticket"
+              style={{ marginBottom: "28px", marginTop: "22px" }}
+            >
               <input type={"checkbox"} /> <span>Vé lẻ (vnđ/vé) với giá</span>
               <input className="primetickets" placeholder="Giá vé" />
               <span>/ vé</span>
@@ -246,9 +256,135 @@ function Defaulayout({ children }) {
               style={{
                 width: 176,
                 height: 40,
-                borderRadius:8,
-              }
-              }
+                borderRadius: 8,
+              }}
+              onChange={handleChange}
+            >
+              <Option value="lucy">Đang áp dụng</Option>
+            </Select>
+          </div>
+          <p>
+            <span>*</span> là thông tin bắt buộc
+          </p>
+          <div className="btnclick">
+            <button className="cancel">Hủy</button>
+            <button onClick={savebtn} className="save">
+              Lưu
+            </button>
+          </div>
+        </div>
+      </div>
+      <div className="updateTicket">
+        <div className="addTicketContent">
+          <h1 style={{ textAlign: "center" }}>Cập nhật thông tin gói vé</h1>
+          <div style={{ display: "flex", gap: "82px" }}>
+            <div>
+              <label className="hcontent">
+                Mã sự kiện<span>*</span>
+              </label>
+              <br />
+              <input className="addnameTicket" style={{ width: "245px" }} />
+            </div>
+            <div>
+              <label className="hcontent">
+                Tên sự kiện<span>*</span>
+              </label>
+              <br />
+              <input className="addnameTicket" />
+            </div>
+          </div>
+          <div className="addTime">
+            <div className="addtime-content">
+              <label className="hcontent">Ngày áp dụng</label>
+              <br />
+              <div className="addtime-contents">
+                <Space direction="vertical" size={12}>
+                  <DatePicker
+                    dateRender={(current) => {
+                      const style = {};
+
+                      if (current.date() === 1) {
+                        style.border = "1px solid #1890ff";
+                        style.borderRadius = "50%";
+                      }
+
+                      return (
+                        <div className="ant-picker-cell-inner" style={style}>
+                          {current.date()}
+                        </div>
+                      );
+                    }}
+                  />
+                </Space>
+                <TimePicker
+                  placeholder="HH:mm:ss"
+                  size="large"
+                  style={{ width: "137px", height: "40px" }}
+                />
+              </div>
+            </div>
+            <div className="addtime-content">
+              <label className="hcontent">Ngày hết hạn</label>
+              <br />
+              <div className="addtime-contents">
+                <Space direction="vertical" size={12}>
+                  <DatePicker
+                    dateRender={(current) => {
+                      const style = {};
+
+                      if (current.date() === 1) {
+                        style.border = "1px solid #1890ff";
+                        style.borderRadius = "50%";
+                      }
+
+                      return (
+                        <div className="ant-picker-cell-inner" style={style}>
+                          {current.date()}
+                        </div>
+                      );
+                    }}
+                  />
+                </Space>
+                <TimePicker
+                  placeholder="HH:mm:ss"
+                  size="large"
+                  style={{ width: "137px", height: "40px" }}
+                />
+              </div>
+            </div>
+          </div>
+          <div>
+            <label className="hcontent">
+              Giá vé áp dụng<span>*</span>
+            </label>
+            <label
+              className="primeticket"
+              style={{ marginBottom: "28px", marginTop: "22px" }}
+            >
+              <input type={"checkbox"} /> <span>Vé lẻ (vnđ/vé) với giá</span>
+              <input className="primetickets" placeholder="Giá vé" />
+              <span>/ vé</span>
+            </label>
+            <label className="primeticket">
+              <input type={"checkbox"} /> <span>Vé lẻ (vnđ/vé) với giá</span>
+              <input className="primetickets" placeholder="Giá vé" />
+              <span>/</span>
+              <input className="primetickets" placeholder="Giá vé" />
+              <span>vé</span>
+            </label>
+          </div>
+          <div>
+            <label className="hcontent">Tình trạng</label>
+            <br />
+
+            <Select
+              className="selecto"
+              defaultValue="Đang áp dụng"
+              style={{
+                width: 176,
+                height: 40,
+                borderRadius: 8,
+              }}
               onChange={handleChange}
             >
               <Option value="lucy">Đang áp dụng</Option>

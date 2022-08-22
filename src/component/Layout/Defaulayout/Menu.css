@@ -139,9 +139,11 @@ span.ant-radio + * {
   max-width: 33.33333333%;
   margin-bottom: 14px;
 }
+.updateTicket.open,
 .addTicket.open{
   display: flex;
 }
+.updateTicket,
 .addTicket{
   position: fixed;
   top: 0;
@@ -164,7 +166,7 @@ span.ant-radio + * {
 }
 .addTime{
   display: flex;
-  gap: 40px;
+  
 }
 .addtime-content{
   width: 48%;
@@ -252,4 +254,7 @@ gap: 8px;
 .save{
   background-color: #FF993C;
   color: white;
+}
+.ant-picker-input > input:placeholder-shown{
+  width: 85px;
 }

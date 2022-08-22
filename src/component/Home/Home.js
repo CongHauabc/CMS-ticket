@@ -102,7 +102,7 @@ function Home() {
           </p>
         </div>
         <div className="dongchart">
-          <div style={{marginRight:'150px'}}>
+          <div>
             <Space direction="vertical" size={12}>
               <DatePicker
                 dateRender={(current) => {
