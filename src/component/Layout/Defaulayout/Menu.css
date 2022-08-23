@@ -258,3 +258,17 @@ gap: 8px;
 .ant-picker-input > input:placeholder-shown{
   width: 85px;
 }
+@keyframes animatbtn {
+  from{
+    opacity: 0;
+    transform: translateX(90%);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+.fillter-content,
+.addTicketContent{
+  animation: animatbtn ease-in-out .3s;
+}

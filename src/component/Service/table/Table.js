@@ -3,11 +3,12 @@ import React, { useState } from "react";
 import "./table.css";
 import update from "~/asset/img/update.png";
 const clicUpdate = ()=>{
-  const btnupdate = document.querySelector(".btnupdate")
+  const btnupdate = document.querySelectorAll(".btnupdate")
   const update = document.querySelector(".updateTicket")
-  btnupdate.addEventListener('click',()=>{
+  btnupdate.forEach(n=>n.addEventListener('click',()=>{
     update.classList.add("open")
-  })
+  }))
+  
 }
 const columns = [
   {

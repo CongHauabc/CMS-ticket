@@ -35,10 +35,10 @@ function Home() {
     labels: ["Thứ 2", "Thứ 3", "Thứ 4", "Thứ 5", "Thứ 6", "Thứ 7", "Chủ nhật"],
     datasets: [
       {
-        data: [150, 170, 180, 240, 210, 200, 180],
+        data: [168, 170, 180, 240, 210, 140, 240],
         backgroundColor: "rgba(250, 160, 95, 0.16)",
         borderColor: "rgba(255, 138, 72, 1)",
-        tension: 0.4,
+        tension: 0.6,
         fill: true,
       },
     ],

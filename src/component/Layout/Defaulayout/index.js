@@ -50,7 +50,10 @@ function Defaulayout({ children }) {
       }
     });
   };
-
+  const [isModalVisible1, setIsModalVisible1] = useState(false);
+  const handleCancel1 = () => {
+    setIsModalVisible1(false);
+  };
   return (
     <div>
       <Row>
@@ -394,7 +397,7 @@ function Defaulayout({ children }) {
             <span>*</span> là thông tin bắt buộc
           </p>
           <div className="btnclick">
-            <button className="cancel">Hủy</button>
+            <button onClick={handleCancel1} className="cancel">Hủy</button>
             <button className="save">Lưu</button>
           </div>
         </div>
