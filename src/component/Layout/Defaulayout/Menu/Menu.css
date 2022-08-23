@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:ital,wght@0,100;0,700;1,100;1,700&display=swap");
 .menu {
   background-color: #f9f6f4;
+  height: 99%;
 }
 li {
   list-style: none;
@@ -87,3 +88,12 @@ a {
     margin-right: 15px;
 }
 
+.Software{
+ 
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+opacity: 0.5;
+}

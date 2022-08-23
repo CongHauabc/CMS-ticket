@@ -4,6 +4,7 @@
   background: #ffffff;
   width: 99%;
   padding: 24px;
+  height: 963px;
 }
 .contents {
   display: flex;
@@ -11,6 +12,7 @@
 }
 .totalsales {
   margin-top: 40px;
+  margin-bottom: 83px;
 }
 .totalsales-title {
   font-family: "Montserrat";
@@ -67,4 +69,7 @@ margin-right: 8px;
 .dongchart{
   display: flex;
   justify-content: space-between;
+}
+.charjsx>canvas{
+  height:327px !important;
 }

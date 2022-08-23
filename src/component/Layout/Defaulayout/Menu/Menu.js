@@ -6,7 +6,7 @@ import img3 from "~/asset/img/DS.png";
 import img4 from "~/asset/img/qltb.png";
 import img5 from "~/asset/img/setting.png";
 import { NavLink, Link, useRoutes } from "react-router-dom";
-
+import alta from "~/asset/img/alta.png"
 import home from "~/asset/img/home.png";
 
 import "antd/dist/antd.css";
@@ -53,26 +53,26 @@ function Menu() {
             </li>
             <li className="limenu">
               
-              <NavLink to="/Ticket1">
+             
               <span>
                 {" "}
                 <img src={img3} className="" />
               </span>
-              Danh sách sự kiện</NavLink>
+              Danh sách sự kiện
             </li>
             <li className="limenu">
               
-              <NavLink to="/Ticket1">
+              
               <span>
                 {" "}
                 <img src={img4} className="" />
               </span>
-              Quản lý thiết bị</NavLink>
+              Quản lý thiết bị
             </li>
 
             <li className="limenu">
               
-              <NavLink to="/Ticket1">
+              <NavLink to="/Service">
               <span>
                 {" "}
                 <img src={img5} className="" />
@@ -81,12 +81,15 @@ function Menu() {
             </li>
             <ul>
               <li className="limenu">
-                <NavLink to="/Service">Gói dịch vụ</NavLink>
+                Gói dịch vụ
               </li>
             </ul>
           </ul>
         </div>
       </menu>
+      <div style={{textAlign:'center'}}>
+        <p className="Software">Copyright 2020 <img src={alta} /> Alta Software </p>
+      </div>
     </Col>
   );
 }

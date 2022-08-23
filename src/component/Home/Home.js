@@ -74,7 +74,7 @@ function Home() {
             </Space>
           </div>
         </div>
-        <div>
+        <div style={{height:'327px'}} className="charjsx">
           <Line
             data={data}
             options={{
