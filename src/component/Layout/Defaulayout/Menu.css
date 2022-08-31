@@ -124,27 +124,29 @@ span.ant-radio + * {
   height: 24px;
   border-radius: 5px;
 }
-.status > label>span{
-  font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    
-    margin-left: 12px;
+.status > label > span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  margin-left: 12px;
 }
-.status>label{
+.status > label {
   display: flex;
   flex: 0 0 33.33333333%;
   max-width: 33.33333333%;
   margin-bottom: 14px;
 }
+.setTime.open,
 .updateTicket.open,
-.addTicket.open{
+.addTicket.open {
   display: flex;
 }
+.setTime,
 .updateTicket,
-.addTicket{
+.addTicket {
   position: fixed;
   top: 0;
   right: 0;
@@ -155,8 +157,9 @@ span.ant-radio + * {
   align-items: center;
   display: none;
   justify-content: center;
+  
 }
-.addTicketContent{
+.addTicketContent {
   width: 758px;
   height: 628px;
 
@@ -164,111 +167,138 @@ span.ant-radio + * {
   border-radius: 16px;
   padding: 24px 32px;
 }
-.addTime{
+.addTime {
   display: flex;
-  
 }
-.addtime-content{
+.addtime-content {
   width: 48%;
-  
 }
-.addtime-contents{
+.addtime-contents {
   display: flex;
   gap: 10px;
 }
-.addnameTicket{
+.addnameTicket {
   width: 367px;
-height: 40px;
-border: 1px solid #A5A8B1;
-border-radius: 8px;
-margin-top: 5px;
-margin-bottom: 25px;
+  height: 40px;
+  border: 1px solid #a5a8b1;
+  border-radius: 8px;
+  margin-top: 5px;
+  margin-bottom: 25px;
 }
-.hcontent{
-  font-family: 'Montserrat';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 26px;
-margin-bottom: 5px;
+.hcontent {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 5px;
 }
-.addTicketContent>label>span{
+.addTicketContent > label > span {
   color: red;
   margin-left: 3px;
 }
-.primeticket>span{
-  font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 20px;
+.primeticket > span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 }
-.primetickets{
+.primetickets {
   width: 148px;
-height: 40px;
-background: #F1F4F8;
-border-radius: 8px;
-border: none;
-margin-top: -11px;
-
+  height: 40px;
+  background: #f1f4f8;
+  border-radius: 8px;
+  border: none;
+  margin-top: -11px;
 }
-.primeticket>input[type='checkbox']{
+.primeticket > input[type="checkbox"] {
   width: 24px;
   height: 24px;
 }
-.primeticket{
+.primeticket {
   display: flex;
-gap: 8px;
+  gap: 8px;
 }
-.btnclick{
+.btnclick {
   display: flex;
   gap: 10px;
   text-align: center;
   margin-left: 50%;
   transform: translateX(-50%);
 }
-.cancel{
-  color: #FF993C;
+.cancel {
+  color: #ff993c;
 }
-.cancel,.save{
+.cancel,
+.save {
   width: 160px;
   height: 48px;
-  
+
   /* Yellow/1 */
-  
-  border: 1px solid #FF993C;
+
+  border: 1px solid #ff993c;
   border-radius: 8px;
   padding: 11px 24px;
   background-color: white;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  
 }
-.ant-select-selector{
-
-  border: 1px solid #A5A8B1 !important;
-  border-radius: 8px !important
+.ant-select-selector {
+  border: 1px solid #a5a8b1 !important;
+  border-radius: 8px !important;
 }
-.save{
-  background-color: #FF993C;
+.save {
+  background-color: #ff993c;
   color: white;
 }
-.ant-picker-input > input:placeholder-shown{
+.ant-picker-input > input:placeholder-shown {
   width: 85px;
 }
 @keyframes animatbtn {
-  from{
+  from {
     opacity: 0;
     transform: translateX(90%);
   }
-  to{
+  to {
     opacity: 1;
     transform: translateX(0%);
   }
 }
 .fillter-content,
-.addTicketContent{
-  animation: animatbtn ease-in-out .3s;
+.addTicketContent,
+.contentTime {
+  animation: animatbtn ease-in-out 0.3s;
+}
+.contentTime {
+  width: 758px;
+  height: 365px;
+  background-color: white;
+  padding: 24px 32px 32px 32px;
+  border-radius: 10px;
+}
+
+.contenttime1 {
+  display: flex;
+  gap: 5%;
+}
+.contenttime1st {
+  width: 20%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  opacity: 0.7;
+}
+.contenttime1th {
+  width: 75%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  opacity: 0.7;
 }

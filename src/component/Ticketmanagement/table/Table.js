@@ -1,7 +1,24 @@
-import { Space, Table, Tag } from "antd";
+import { Space, Table, Tag, Popover } from "antd";
 import React, { useState } from "react";
 
-import  img1  from '~/asset/img/ve.png';
+import dotdotdot from "~/asset/img/dotdotdot.png";
+const setTimes = () =>{
+  const setTimess = document.querySelector(".setTime");
+  const btnsetimes = document.querySelectorAll(".btnsetime")
+  btnsetimes.forEach(i=>{
+    i.addEventListener('click',()=>{
+      setTimess.classList.add('open')
+    })
+  })
+}
+const content = (
+  <div style={{cursor:'pointer'}}>
+    <p>Sử dụng vé</p>
+    <p onClick={setTimes} className="btnsetime" >Đổi ngày sử dụng</p>
+  </div>
+);
+
+
 const columns = [
   {
     title: "STT",
@@ -54,8 +71,9 @@ const columns = [
     dataIndex: "status",
     render: () => (
       <Space size="middle">
-        <img src={img1} /><a>Invite </a>
-       
+        <Popover content={content}  trigger="click">
+          <img style={{cursor:'pointer'}} src={dotdotdot}/>
+        </Popover>
       </Space>
     ),
   },

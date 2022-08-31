@@ -19,9 +19,33 @@ function Defaulayout({ children }) {
   const savebtn = () => {
     const update = document.querySelector(".addTicket");
     const save = document.querySelector(".save");
+   
     save.addEventListener("click", () => {
       update.classList.remove("open");
+      
     });
+  };
+  const btncancel = () => {
+    const addTicketContents = document.querySelector('.updateTicket');
+    const cancel = document.querySelectorAll(".cancel");
+   cancel.forEach(n=>{
+    n.addEventListener('click',()=>{
+      addTicketContents.classList.remove("open");
+     })
+   })
+   
+
+  };    
+  const savebtns = () => {
+    
+    const save = document.querySelectorAll(".save");
+    const setTimess = document.querySelector(".setTime");
+    save.forEach(m=>{
+      m.addEventListener("click", () => {
+      
+        setTimess.classList.remove('open')
+      });
+    })
   };
   const handleChange = (value) => {
     console.log(`selected ${value}`);
@@ -50,10 +74,8 @@ function Defaulayout({ children }) {
       }
     });
   };
-  const [isModalVisible1, setIsModalVisible1] = useState(false);
-  const handleCancel1 = () => {
-    setIsModalVisible1(false);
-  };
+  
+  
   return (
     <div>
       <Row>
@@ -397,8 +419,54 @@ function Defaulayout({ children }) {
             <span>*</span> là thông tin bắt buộc
           </p>
           <div className="btnclick">
-            <button onClick={handleCancel1} className="cancel">Hủy</button>
+            <button onClick={btncancel} className="cancel">
+              Hủy
+            </button>
             <button className="save">Lưu</button>
+          </div>
+        </div>
+      </div>
+      <div className="setTime">
+        <div className="contentTime">
+          <h1 style={{ textAlign: "center",marginBottom:'30px' }}>Đổi ngày sử dụng vé</h1>
+          <div className="contenttime1">
+            <div className="contenttime1st">
+              <p>Số vé</p>
+              <p>Số vé</p>
+              <p>Tên sự kiện</p>
+              <p>
+                <b>Hạn sử dụng</b>
+              </p>
+            </div>
+            <div className="contenttime1th">
+              <p>PKG20210502</p>
+              <p>Vé cổng - Gói sự kiện</p>
+              <p>Hội trợ triển lãm hàng tiêu dùng 2021</p>
+              <Space direction="vertical" size={12}>
+                <DatePicker
+                  dateRender={(current) => {
+                    const style = {};
+
+                    if (current.date() === 1) {
+                      style.border = "1px solid #1890ff";
+                      style.borderRadius = "50%";
+                    }
+
+                    return (
+                      <div className="ant-picker-cell-inner" style={style}>
+                        {current.date()}
+                      </div>
+                    );
+                  }}
+                />
+              </Space>
+            </div>
+          </div>
+          <div className="btnclick">
+            <button className="cancel">Hủy</button>
+            <button onClick={savebtns} className="save">
+              Lưu
+            </button>
           </div>
         </div>
       </div>
