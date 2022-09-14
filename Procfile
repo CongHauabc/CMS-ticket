@@ -1,1 +1,1 @@
-web: gunycorn app:app
+node:web server/index.js
