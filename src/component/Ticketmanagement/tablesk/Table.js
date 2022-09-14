@@ -1,5 +1,21 @@
-import { Button, Table ,Tag} from "antd";
+import { Space, Table ,Tag,Popover} from "antd";
 import React, { useState } from "react";
+import dotdotdot from "~/asset/img/dotdotdot.png";
+const setTimes = () =>{
+  const setTimess = document.querySelector(".setTime");
+  const btnsetimes = document.querySelectorAll(".btnsetime")
+  btnsetimes.forEach(i=>{
+    i.addEventListener('click',()=>{
+      setTimess.classList.add('open')
+    })
+  })
+}
+const content = (
+  <div style={{cursor:'pointer'}}>
+    <p>Sử dụng vé</p>
+    <p onClick={setTimes} className="btnsetime" >Đổi ngày sử dụng</p>
+  </div>
+);
 const columns = [
   
   {
@@ -52,9 +68,17 @@ const columns = [
     title: "Cổng check - in",
     dataIndex: "checkin",
   },
+ 
   {
     title: "",
     dataIndex: "status",
+    render: () => (
+      <Space size="middle">
+        <Popover content={content}  trigger="click">
+          <img style={{cursor:'pointer'}} src={dotdotdot}/>
+        </Popover>
+      </Space>
+    ),
   },
 ];
 const data = [{

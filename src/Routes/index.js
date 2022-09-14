@@ -2,8 +2,8 @@
 import Home from "~/component/Home/Home"
 import Ticket from "~/component/Ticketmanagement/Ticket"
 import Ticketcontrol from "~/component/Ticketcontrol/Ticketcontrol"
-
 import Service from "~/component/Service/Service"
+
 const publicRouter = [
     {path:'/',component:Home},
    

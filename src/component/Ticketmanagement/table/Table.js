@@ -2,22 +2,26 @@ import { Space, Table, Tag, Popover } from "antd";
 import React, { useState } from "react";
 
 import dotdotdot from "~/asset/img/dotdotdot.png";
-const setTimes = () =>{
+import "./table.css";
+
+
+const setTimes = () => {
   const setTimess = document.querySelector(".setTime");
-  const btnsetimes = document.querySelectorAll(".btnsetime")
-  btnsetimes.forEach(i=>{
-    i.addEventListener('click',()=>{
-      setTimess.classList.add('open')
-    })
-  })
-}
+  const btnsetimes = document.querySelectorAll(".btnsetime");
+  btnsetimes.forEach((i) => {
+    i.addEventListener("click", () => {
+      setTimess.classList.add("open");
+    });
+  });
+};
 const content = (
-  <div style={{cursor:'pointer'}}>
+  <div style={{ cursor: "pointer" }}>
     <p>Sử dụng vé</p>
-    <p onClick={setTimes} className="btnsetime" >Đổi ngày sử dụng</p>
+    <p onClick={setTimes} className="btnsetime">
+      Đổi ngày sử dụng
+    </p>
   </div>
 );
-
 
 const columns = [
   {
@@ -69,15 +73,25 @@ const columns = [
   {
     title: "",
     dataIndex: "status",
-    render: () => (
-      <Space size="middle">
-        <Popover content={content}  trigger="click">
-          <img style={{cursor:'pointer'}} src={dotdotdot}/>
-        </Popover>
-      </Space>
+    render: (sta) => (
+      <>
+     
+            <Space size="middle">
+              <Popover content={content} trigger="click">
+                <img
+                  style={{ cursor: "pointer" }}
+                  src={dotdotdot}
+                  
+                  className={data[3] === "Hết hạn" ? 'dotdot':''}
+                />
+              </Popover>
+            </Space>
+          
+      </>
     ),
   },
 ];
+
 const data = [
   {
     key: 1,
@@ -198,6 +212,14 @@ const data = [
   },
 ];
 
+const con = document.querySelector(".ant-tag-green");
+const cons = document.querySelectorAll(".dotdotdot")
+
+
+ 
+
+ 
+
 for (let i = 0; i < data.length; i++) {
   data.push();
 }
@@ -218,8 +240,8 @@ const App = () => {
   };
 
   return (
-    <div>
-      <Table columns={columns} dataSource={data} />
+    <div className="abc">
+      <Table columns={columns} dataSource={data}  />
     </div>
   );
 };
